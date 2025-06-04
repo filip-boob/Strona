@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #2B2A29;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #F9F9F9;
+  }
+  
+  /* Fixed navbar */
+  .navbar {
+
+    top: 0em;
+    position: sticky;
+    background-color: #ffffff;
+    padding: 1em 2em;
+    z-index: 1000;
+    height: 3em;
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #ECECEC;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 5em;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  .navbar a {
+    color: #2B2A29;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Push page content down so it's not hidden behind the fixed nav */
+  main {
+    padding-top: 80px;
+
+
+}
+#Główna {
+  scroll-margin-top: 6.5em; /* dopasuj do wysokości Twojego nagłówka */
+}
+#Specjalizacja {
+  scroll-margin-top: 8em; /* dopasuj do wysokości Twojego nagłówka */
+}
+#Kontakt {
+  scroll-margin-top: 8em; /* dopasuj do wysokości Twojego nagłówka */
+}
+a {
+  opacity: 1; /* starting opacity */
+  
+  transition: opacity 0.3s ease;
+}
+
+a:hover {
+  opacity: 0.6; /* more opaque on hover */
+
+}
+html {
+scroll-behavior: smooth; }
